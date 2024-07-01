@@ -16,7 +16,7 @@ Accessible, Data-Driven, Dependency-Free Documentation for Minecraft Modders and
 [[dependencies.patchouli]]
 modId="neoforge"
 type="REQUIRED"
-versionRange="[21.0.31-beta,)"
+versionRange="[21.0.24-beta,)"
 
 [[dependencies.patchouli]]
 modId="minecraft"
