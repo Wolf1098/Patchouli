@@ -1,0 +1,41 @@
+From 13eee8f72cbf9a6bb458e9a442776ce36a06231f Mon Sep 17 00:00:00 2001
+From: Wolf1098 <Wolf1098@wolfietech.xyz>
+Date: Mon, 1 Jul 2024 04:40:04 -0700
+Subject: [PATCH] Use older -24 build of neoforge, to match what publicly
+ released ATM10 was built with
+
+Switch build.gradle and neoforge.mods.toml to support 1.21.0-24-beta NeoForge
+---
+ NeoForge/build.gradle                                   | 2 +-
+ NeoForge/src/main/resources/META-INF/neoforge.mods.toml | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/NeoForge/build.gradle b/NeoForge/build.gradle
+index 54ee59bf..68633c11 100644
+--- a/NeoForge/build.gradle
++++ b/NeoForge/build.gradle
+@@ -37,7 +37,7 @@ runs {
+ }
+ 
+ dependencies {
+-    implementation "net.neoforged:neoforge:21.0.42-beta"
++    implementation "net.neoforged:neoforge:21.0.24-beta"
+     implementation project(":Xplat")
+ 
+     compileOnly "mezz.jei:jei-1.21-common-api:19.0.0.9"
+diff --git a/NeoForge/src/main/resources/META-INF/neoforge.mods.toml b/NeoForge/src/main/resources/META-INF/neoforge.mods.toml
+index 186d9201..7688fd63 100644
+--- a/NeoForge/src/main/resources/META-INF/neoforge.mods.toml
++++ b/NeoForge/src/main/resources/META-INF/neoforge.mods.toml
+@@ -16,7 +16,7 @@ Accessible, Data-Driven, Dependency-Free Documentation for Minecraft Modders and
+ [[dependencies.patchouli]]
+ modId="neoforge"
+ type="REQUIRED"
+-versionRange="[21.0.31-beta,)"
++versionRange="[21.0.24-beta,)"
+ 
+ [[dependencies.patchouli]]
+ modId="minecraft"
+-- 
+2.43.0.windows.1
+
